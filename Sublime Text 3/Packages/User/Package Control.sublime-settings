@@ -1,0 +1,23 @@
+{
+	"installed_packages":
+	[
+		"AngularJS",
+		"Autoprefixer",
+		"BracketHighlighter",
+		"Bubububububad and Boneyfied Color Schemes",
+		"Clipboard Manager",
+		"DocBlockr",
+		"Emmet",
+		"GitGutter",
+		"JavaScript & NodeJS Snippets",
+		"LiveReload",
+		"Sass",
+		"SCSS",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeERB",
+		"sublimelint",
+		"Theme - Soda",
+		"Theme - Spacegray"
+	]
+}
