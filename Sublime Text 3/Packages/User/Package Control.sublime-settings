@@ -5,19 +5,23 @@
 		"Autoprefixer",
 		"BracketHighlighter",
 		"Bubububububad and Boneyfied Color Schemes",
+		"Clickable URLs",
 		"Clipboard Manager",
 		"DocBlockr",
 		"Emmet",
 		"GitGutter",
+		"Handlebars",
 		"JavaScript & NodeJS Snippets",
 		"LiveReload",
 		"Sass",
 		"SCSS",
 		"SideBarEnhancements",
+		"SideBarGit",
 		"SublimeCodeIntel",
 		"SublimeERB",
 		"sublimelint",
 		"Theme - Soda",
-		"Theme - Spacegray"
+		"Theme - Spacegray",
+		"Todo"
 	]
 }
