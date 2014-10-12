@@ -1,9 +1,13 @@
 {
-	"color_scheme": "Packages/Bubububububad and Boneyfied Color Schemes/Boneyfied.tmTheme",
+	"color_scheme": "Packages/Bubububububad and Boneyfied Color Schemes/Bone-a-kite.tmTheme",
 	"font_size": 12,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Handlebars",
+		"SideBarEnhancements",
+		"Vintage",
+		"JavaScript & NodeJS Snippets",
+		"Autoprefixer"
 	],
 	"indent_to_bracket": true,
 	"soda_classic_tabs": false,

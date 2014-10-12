@@ -1,31 +1,24 @@
 'use strict';
-var autoprefixer = require('autoprefixer');
-var str = '';
+var stdin = require('get-stdin');
+var autoprefixer = require('autoprefixer-core');
 
-process.stdin.setEncoding('utf8');
-process.stdin.resume();
-
-process.stdin.on('data', function (data) {
-	str += data;
-});
-
-process.stdin.on('end', function () {
-	var result;
-	var browsers = process.argv[2].split(',');
+stdin(function (data) {
+	var opts = JSON.parse(process.argv[2]);
 
 	try {
-		result = autoprefixer.apply(this, browsers).process(str);
+		var css = autoprefixer(opts).process(data, {safe: true}).css;
+		process.stdout.write(css);
 	} catch (err) {
 		if (/Unclosed block/.test(err.message)) {
-			return console.error('Couldn\'t find any valid CSS rules. You can\'t select properties. Select a whole rule and try again.');
+			console.error('Couldn\'t find any valid CSS rules. You can\'t select properties. Select a whole rule and try again.');
+			return;
 		}
 
 		if (err.name === 'TypeError') {
-			return console.error('Invalid CSS.');
+			console.error('Invalid CSS');
+			return
 		}
 
 		throw err;
 	}
-
-	process.stdout.write(result.css);
 });
